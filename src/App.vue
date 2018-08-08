@@ -1,20 +1,11 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <header-bar></header-bar>
+    <div id="nav">
+    </div>
+    <router-view/>
   </div>
 </template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
-</script>
 
 <style>
 #app {
@@ -26,3 +17,13 @@ export default {
   margin-top: 60px;
 }
 </style>
+
+<script>
+  import HeaderBar from './components/header-bar/HeaderBar.vue';
+
+  export default {
+      components: {
+          HeaderBar
+      }
+  }
+</script>
